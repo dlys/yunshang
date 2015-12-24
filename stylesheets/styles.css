@@ -1,0 +1,31 @@
+.sliders{	position:relative;width:790px;padding:0 75px;overflow:hidden;}
+
+
+#slider ul, #slider li{
+	margin:0;
+	padding:0;
+	list-style:none;
+	}
+#slider,#slider li{width:790px;height:150px;overflow:hidden;}
+#slider p { 
+	display:block;  
+	float:left; 
+	padding:15px 15px; 
+	font-size:11px; 
+	width:128px; 
+	text-align:center; 
+	font-family: Verdana, Geneva, sans-serif;
+	color:#000000;
+}
+span#prevBtn,span#nextBtn{display:block; 
+	position:absolute; 
+	cursor:pointer; 
+	width:25px; 
+	height: 150px; 
+	bottom:0px; 
+	right: 0px; 
+	background:url(../images/slideitmoo_forward.png) no-repeat center;  }
+span#prevBtn{left:0px; background:url(../images/slideitmoo_back.png) no-repeat center; }
+span#prevBtn a,span#nextBtn a{width:25px;height:150px;display:block;}
+#slider a { padding:0px; margin:3px 0px 3px; clear:both; display:block; background:none; padding:2px; }
+#slider a img{ border:none; }
