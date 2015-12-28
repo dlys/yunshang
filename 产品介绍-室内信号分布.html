@@ -4,30 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>大连艾特云科技发展有限公司</title>
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
-<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
 <script type="text/javascript">
 $(function(){
-	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
-	//分页参数设置
-	var pcount=100;//总记录数
-	var pagesize=10;//页码
-	var page=5;//当前页数
-	$("#Pagination").pagination(pcount, {
-		callback: pageselectCallback,
-		prev_text: "« 上一页",
-		next_text: "下一页 »",
-		items_per_page:pagesize,
-		num_display_entries:3,
-		current_page:page,
-		num_edge_entries:2,
-		link_to:"?page=__id__"
-	});
+$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 });
-function pageselectCallback(page_id, jq) {
-    //alert(page_id); 回调函数，进一步使用请参阅说明文档
-}
 </script>
 </head>
 
@@ -81,7 +62,7 @@ function pageselectCallback(page_id, jq) {
 <li><a href="#">松下</a></li>
 </ul></li>
 <li><a href="#">综合布线</a></li>
-<li><a href="#">远程监控</a><ul>
+<li><a href="#"><strong>远程监控</strong></a><ul>
 <li><a href="#">有线监控</a></li>
 <li><a href="#">无线监控</a></li>
 <li><a href="#">云监控</a></li>
@@ -95,16 +76,22 @@ function pageselectCallback(page_id, jq) {
 
 <div class="section_698">
 <div class="main_content">
-<div><img src="images/product_title.jpg" width="648" height="52" /></div>
-<div class="piclist"><ul>
-<li><a href=""><img src="images/templatemo_product_01.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_02.png" alt="" />产品标题产品标题产品标题产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_03.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_04.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_05.png" alt="" />产品标题产品标题产品标题产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_06.png" alt="" />产品标题</a></li>
-</ul></div>
-<div id="Pagination" class="flickr right"></div>
+<div><img src="images/product_title.jpg" width="648" height="52" /> </div>
+<div class="contents">
+<h3>室内信号分布</h3>
+<table width="100%" border="0" cellspacing="10" cellpadding="0">
+<tr>
+<td width="50%"><img src="室内信号分布.jpg" width="299" height="321" /></td>
+<td width="50%" valign="top" class="product_spec"><strong>产品编号：</strong>ATY-1-1<br /><strong>产品价格：</strong><br />
+<strong>产品规格：</strong></td>
+</tr>
+<tr>
+<td colspan="2" valign="top" class="product_text"><strong>详细参数</strong>：<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;视频监控是安全防范系统的重要组成部分，它是一种防范能力较强的综合系统。视频监控以其直观、准确、及时和信息内容丰富而广泛应用于许多场合。传统的视频监控是指在固定区域及固定终端上观测图象和音频信息。<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;近年来，随着计算机、网络以及图像处理、传输技术的飞速发展，视频监控技术也有了长足的发展，通过软硬件结合，我们可实现公司管理者在任何时间、任何地点、采用任一种上网方式、任何终端（电脑、PDA、手机、IPHONE、IPAD等）上对公司及家庭财产进行监控。
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="main_foot"></div>
 </div>

@@ -4,30 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>大连艾特云科技发展有限公司</title>
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
-<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
 <script type="text/javascript">
 $(function(){
-	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
-	//分页参数设置
-	var pcount=100;//总记录数
-	var pagesize=10;//页码
-	var page=5;//当前页数
-	$("#Pagination").pagination(pcount, {
-		callback: pageselectCallback,
-		prev_text: "« 上一页",
-		next_text: "下一页 »",
-		items_per_page:pagesize,
-		num_display_entries:3,
-		current_page:page,
-		num_edge_entries:2,
-		link_to:"?page=__id__"
-	});
+$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 });
-function pageselectCallback(page_id, jq) {
-    //alert(page_id); 回调函数，进一步使用请参阅说明文档
-}
 </script>
 </head>
 
@@ -54,9 +35,7 @@ function pageselectCallback(page_id, jq) {
 
 </div>
 </div>
-<div id="banner">
-<div id="banner2"><img src="images/fangan.jpg" width="930" height="150" /></div>
-</div>
+<div id="banner"><img src="images/fangan.jpg" width="930" height="150" /></div>
 <div id="location">当前位置：<a href="index.html">首页</a > > 解决方案</div>
 <div id="templatemo_content2">
 <div class="section_218">
@@ -77,15 +56,10 @@ function pageselectCallback(page_id, jq) {
 <div class="section_698">
 <div class="main_content">
 <div><img src="images/fangan_title.jpg" width="648" height="52" /></div>
-<div class="listtxt"><ul>
-<li><a href="#" target="_blank">解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-</ul></div>
-<div id="Pagination" class="flickr right"></div>
+<div class="contents">
+<h2>标题标题标题</h2>
+<p>内容内容</p>
+</div>
 </div>
 <div class="main_foot"></div>
 </div>

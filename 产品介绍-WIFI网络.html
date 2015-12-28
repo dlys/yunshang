@@ -4,30 +4,11 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>大连艾特云科技发展有限公司</title>
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
-<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
-<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
 <script type="text/javascript">
 $(function(){
-	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
-	//分页参数设置
-	var pcount=100;//总记录数
-	var pagesize=10;//页码
-	var page=5;//当前页数
-	$("#Pagination").pagination(pcount, {
-		callback: pageselectCallback,
-		prev_text: "« 上一页",
-		next_text: "下一页 »",
-		items_per_page:pagesize,
-		num_display_entries:3,
-		current_page:page,
-		num_edge_entries:2,
-		link_to:"?page=__id__"
-	});
+$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 });
-function pageselectCallback(page_id, jq) {
-    //alert(page_id); 回调函数，进一步使用请参阅说明文档
-}
 </script>
 </head>
 
@@ -81,7 +62,7 @@ function pageselectCallback(page_id, jq) {
 <li><a href="#">松下</a></li>
 </ul></li>
 <li><a href="#">综合布线</a></li>
-<li><a href="#">远程监控</a><ul>
+<li><a href="#"><strong>远程监控</strong></a><ul>
 <li><a href="#">有线监控</a></li>
 <li><a href="#">无线监控</a></li>
 <li><a href="#">云监控</a></li>
@@ -95,16 +76,23 @@ function pageselectCallback(page_id, jq) {
 
 <div class="section_698">
 <div class="main_content">
-<div><img src="images/product_title.jpg" width="648" height="52" /></div>
-<div class="piclist"><ul>
-<li><a href=""><img src="images/templatemo_product_01.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_02.png" alt="" />产品标题产品标题产品标题产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_03.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_04.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_05.png" alt="" />产品标题产品标题产品标题产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_06.png" alt="" />产品标题</a></li>
-</ul></div>
-<div id="Pagination" class="flickr right"></div>
+<div><img src="images/product_title.jpg" width="648" height="52" /> </div>
+<div class="contents">
+<h3>WIFI无线网络</h3>
+<table width="100%" border="0" cellspacing="10" cellpadding="0">
+<tr>
+<td width="50%"><img src="wifi.jpg" width="300" height="300" /></td>
+<td width="50%" valign="top" class="product_spec"><strong>产品编号：</strong>ATY-8-01<br />
+  <strong>产品价格：</strong><br />
+  <strong>产品规格：</strong></td>
+</tr>
+<tr>
+<td colspan="2" valign="top" class="product_text"><p><strong>详细参数</strong>：<br />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WIFI全称wireless fidelity,是当今使用最广的一种无线网络传输技术。 实际上就是把有线网络信号转换成无线信号，供支持其技术的相关电脑，手机，PDA等接收。手机如果有WIFI功能的话，在有WIFI无线信号的时候就可以不通过移动联通的网络上网，省掉了流量费。但是WIFI信号也是由通信宽带网提供的，比如公司的光纤、家里的ADSL、小区宽带之类的，只要利用布设的无线路由器，就可以把有线信号转换成WIFI信号。我们可为贵公司设计、建设WIFI网络供内部员工使用，该技术目前得到广泛推广。 </p>
+  </td>
+</tr>
+</table>
+</div>
 </div>
 <div class="main_foot"></div>
 </div>
