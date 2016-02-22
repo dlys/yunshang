@@ -1,14 +1,42 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>大连云尚网络科技发展有限公司</title>
+
+<title>大连云尚网络科技有限公司</title>
+
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
+
+<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
+
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+
+<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
+
 <script type="text/javascript">
 $(function(){
-$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	//分页参数设置
+	var pcount=8;//总记录数
+	var pagesize=0;//页码
+	var page=0;//当前页数
+	$("#Pagination").pagination(pcount, {
+		callback: pageselectCallback,
+		prev_text: "« 上一页",
+		next_text: "下一页 »",
+		items_per_page:pagesize,
+		num_display_entries:3,
+		current_page:page,
+		num_edge_entries:2,
+		//link_to:"技术入门-详细页1.html"
+	});
 });
+function pageselectCallback(page_id, jq) {
+	window.location = "技术入门-详细页" + page_id + ".html"
+}
 </script>
 </head>
 
@@ -17,8 +45,8 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <div id="templatemo_site_title_bar_wrapper">
 <div id="templatemo_site_title_bar">
 <div id="site_title">
-<h1><a href="http://www.dlaty.com/" target="_parent"> 
-<img src="images/templatemo_logo.png" alt="www.dlaty.com" /><span>www.dlaty.com</span> </a></h1>
+<h1><a> 
+<img src="images/templatemo_logo.png" alt="www.dlaty.com" /></a></h1>
 </div>
 <div id="templatemo_menu">
 <ul>
@@ -44,7 +72,6 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <dd><ul id="nav">
 <li><a href="#">云技术的应用</a></li>
 <li><a href="#">新技术的推广</a></li>
-<li><a href="#">常见问题处理</a></li>
 </ul></dd>
 </dl>
 </div>
@@ -68,6 +95,7 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <p>今天，IBM软件集团将其行业领先的云计算技术和战略带到西北，携手兰州市政府、甘肃移动和合作伙伴软通动力一起，共同成立的西北中小企业云计算服务中心，不仅是IBM软件集团在西北地区开展云计算及智慧城市所迈出的重要一步，更为助力西北地区中小企业业务拓展与转型奠定了扎实的基础。未来，IBM软件集团还将在其积极为政府及企业提供“软”实力以推动客户业务发展的战略基础上，持续加强与兰州市人民政府、甘肃移动以及软通动力的合作，共绘西北地区云计算与智慧城市发展的宏伟蓝图，加速西北信息化建设与“两化”融合发展及软件产业生态环境建设，从而实现多方合作共赢的商业价值最大化。<br />
 </p>
 </div>
+<div id="Pagination" class="flickr right"></div>
 </div>
 <div class="main_foot"></div>
 </div>
@@ -78,7 +106,7 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <div id="templatemo_footer_wrapper">
 <div id="templatemo_footer">
 <center>
-版权所有 <a href="">大连云尚网络科技发展有限公司</a>
+版权所有 <a href="">大连云尚网络科技有限公司</a>
 </center>
 </div>
 <div class="cleaner"></div>

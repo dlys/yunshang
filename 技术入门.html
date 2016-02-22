@@ -1,17 +1,26 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
 <title>大连云尚网络科技有限公司</title>
+
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
+
 <link rel="stylesheet" type="text/css" href="styles/pagination.css" />
+
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+
 <script type="text/javascript" src="scripts/jquery.pagination.js"></script>
+
 <script type="text/javascript">
 $(function(){
 	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 	//分页参数设置
-	var pcount=10;//总记录数
+	var pcount=8;//总记录数
 	var pagesize=0;//页码
 	var page=4;//当前页数
 	$("#Pagination").pagination(pcount, {
@@ -22,11 +31,11 @@ $(function(){
 		num_display_entries:3,
 		current_page:page,
 		num_edge_entries:2,
-		link_to:"技术入门-详细页1.html"
+		//link_to:"技术入门-详细页1.html"
 	});
 });
 function pageselectCallback(page_id, jq) {
-    //alert(page_id); 回调函数，进一步使用请参阅说明文档
+	window.location = "技术入门-详细页" + page_id + ".html"
 }
 </script>
 </head>

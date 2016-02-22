@@ -1,14 +1,42 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>大连云尚网络科技发展有限公司</title>
+
+<title>大连云尚网络科技有限公司</title>
+
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
+
+<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
+
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+
+<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
+
 <script type="text/javascript">
 $(function(){
-$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	//分页参数设置
+	var pcount=8;//总记录数
+	var pagesize=0;//页码
+	var page=6;//当前页数
+	$("#Pagination").pagination(pcount, {
+		callback: pageselectCallback,
+		prev_text: "« 上一页",
+		next_text: "下一页 »",
+		items_per_page:pagesize,
+		num_display_entries:3,
+		current_page:page,
+		num_edge_entries:2,
+		//link_to:"技术入门-详细页1.html"
+	});
 });
+function pageselectCallback(page_id, jq) {
+	window.location = "技术入门-详细页" + page_id + ".html"
+}
 </script>
 </head>
 
@@ -17,8 +45,8 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <div id="templatemo_site_title_bar_wrapper">
 <div id="templatemo_site_title_bar">
 <div id="site_title">
-<h1><a href="http://www.dlaty.com/" target="_parent"> 
-<img src="images/templatemo_logo.png" alt="www.dlaty.com" /><span>www.dlaty.com</span> </a></h1>
+<h1><a> 
+<img src="images/templatemo_logo.png" alt="www.dlaty.com" /></a></h1>
 </div>
 <div id="templatemo_menu">
 <ul>
@@ -44,7 +72,6 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <dd><ul id="nav">
 <li><a href="#">云技术的应用</a></li>
 <li><a href="#">新技术的推广</a></li>
-<li><a href="#">常见问题处理</a></li>
 </ul></dd>
 </dl>
 </div>
@@ -68,6 +95,7 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <p>据微软称，正式版Office 365将包含对Office for Mac的支持。微软尚未披露是否或何时将Office或Office   365订阅计划移植到iOS或Android设备。</p>
 <p>微软高管没有披露Office 2013或Office 365计划的发布日期。微软今年早些时候曾向合作伙伴表示计划明年初发布Office   2013，但部分合作伙伴最近表示，它们认为Office 2013发布时间将推迟到明年5月份。</p>
 </div>
+<div id="Pagination" class="flickr right"></div>
 </div>
 <div class="main_foot"></div>
 </div>
@@ -78,7 +106,7 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <div id="templatemo_footer_wrapper">
 <div id="templatemo_footer">
 <center>
-版权所有 <a href="">大连云尚网络科技发展有限公司</a>
+版权所有 <a href="">大连云尚网络科技有限公司</a>
 </center>
 </div>
 <div class="cleaner"></div>

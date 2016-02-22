@@ -1,14 +1,42 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
 <html xmlns="http://www.w3.org/1999/xhtml">
+
 <head>
+
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>大连云尚网络科技发展有限公司</title>
+
+<title>大连云尚网络科技有限公司</title>
+
 <link rel="stylesheet" type="text/css" href="templatemo_style.css" />
+
+<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
+
 <script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+
+<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
+
 <script type="text/javascript">
 $(function(){
-$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	//分页参数设置
+	var pcount=8;//总记录数
+	var pagesize=0;//页码
+	var page=2;//当前页数
+	$("#Pagination").pagination(pcount, {
+		callback: pageselectCallback,
+		prev_text: "« 上一页",
+		next_text: "下一页 »",
+		items_per_page:pagesize,
+		num_display_entries:3,
+		current_page:page,
+		num_edge_entries:2,
+		//link_to:"技术入门-详细页1.html"
+	});
 });
+function pageselectCallback(page_id, jq) {
+	window.location = "技术入门-详细页" + page_id + ".html"
+}
 </script>
 </head>
 
@@ -17,8 +45,8 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <div id="templatemo_site_title_bar_wrapper">
 <div id="templatemo_site_title_bar">
 <div id="site_title">
-<h1><a href="http://www.dlaty.com/" target="_parent"> 
-<img src="images/templatemo_logo.png" alt="www.dlaty.com" /><span>www.dlaty.com</span> </a></h1>
+<h1><a> 
+<img src="images/templatemo_logo.png" alt="www.dlaty.com" /></a></h1>
 </div>
 <div id="templatemo_menu">
 <ul>
@@ -44,7 +72,6 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <dd><ul id="nav">
 <li><a href="#">云技术的应用</a></li>
 <li><a href="#">新技术的推广</a></li>
-<li><a href="#">常见问题处理</a></li>
 </ul></dd>
 </dl>
 </div>
@@ -69,6 +96,7 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <p>模拟电厂仿真系统真实地展现工作人员在电厂内的作业场景，使参观者可以身临其境地跟随模拟工作者一起完成工程作业。和利时火电行业应用专业系统是模拟真实工业现场环境，再现工业环境，以目前世界最高等级1000MW火力发电应用领域的软件为主，配合部分核心控制器产品，向观众展示了该领域代表中国实力的高科技成果。</p>
 <p>打破传统控制系统中软硬件之间高度相互依赖的局面，将不同品牌的控制设备资源通过工业自动化通用控制技术平台(IAP)软件体系以统一的技术标准进行无缝融合，观众可以通过统一的IAP软件终端触摸操控，对软件与硬件设备进行设备操作、数据通信、画面监视等。福大自动化推出的IAP，这一具有国际领先水平的通用控制技术，打破了行业关键控制技术的国际垄断，解决了控制软件技术跨平台、跨硬件等问题。</p>
 </div>
+<div id="Pagination" class="flickr right"></div>
 </div>
 <div class="main_foot"></div>
 </div>
@@ -79,7 +107,7 @@ $("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(thi
 <div id="templatemo_footer_wrapper">
 <div id="templatemo_footer">
 <center>
-版权所有 <a href="">大连云尚网络科技发展有限公司</a>
+版权所有 <a href="">大连云尚网络科技有限公司</a>
 </center>
 </div>
 <div class="cleaner"></div>
