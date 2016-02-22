@@ -11,9 +11,9 @@
 $(function(){
 	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 	//分页参数设置
-	var pcount=100;//总记录数
-	var pagesize=10;//页码
-	var page=5;//当前页数
+	var pcount=10;//总记录数
+	var pagesize=0;//页码
+	var page=4;//当前页数
 	$("#Pagination").pagination(pcount, {
 		callback: pageselectCallback,
 		prev_text: "« 上一页",
@@ -22,7 +22,7 @@ $(function(){
 		num_display_entries:3,
 		current_page:page,
 		num_edge_entries:2,
-		link_to:"?page=__id__"
+		link_to:"技术入门-详细页1.html"
 	});
 });
 function pageselectCallback(page_id, jq) {
@@ -63,7 +63,6 @@ function pageselectCallback(page_id, jq) {
 <dd><ul id="nav">
 <li><a href="#">云技术的应用</a></li>
 <li><a href="#">新技术的推广</a></li>
-<li><a href="#">常见问题处理</a></li>
 </ul></dd>
 </dl>
 </div>
