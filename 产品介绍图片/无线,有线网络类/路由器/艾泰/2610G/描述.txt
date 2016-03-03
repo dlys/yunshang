@@ -1,0 +1,19 @@
+★路由器类型：宽带路由器
+★网络协议：IP，TCP，ARP，UDP，ICMP，NAT，反向NAT，DHCP，SNTP，触发式路由更新，TELNET，HTTP，TFTP，PPP，SNMP，PPPoE，PAP，CHAP，SYSLOG
+★传输速率：10/100Mbps
+★端口结构：非模块化
+★广域网接口：1个
+★局域网接口：4个
+★其它端口：1个Console端口
+★包转发率：80Kpps
+★功能参数	
+★防火墙：内置防火墙
+★网络管理：WEB UI，CLI，Xport HiPER Manager
+★其他参数	
+★用户数量：80-150台
+★电源电压：AC 180-240V
+★产品认证：CE，FCC
+★产品尺寸：440×224×44mm
+★产品重量：2kg
+★环境标准工作温度：0-40℃
+★工作湿度：10%-90%（不结露）
