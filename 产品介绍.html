@@ -11,9 +11,9 @@
 $(function(){
 	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 	//分页参数设置
-	var pcount=8;//总记录数
+	var pcount=1;//总记录数
 	var pagesize=0;//页码
-	var page=4;//当前页数
+	var page=0;//当前页数
 	$("#Pagination").pagination(pcount, {
 		callback: pageselectCallback,
 		prev_text: "« 上一页",
@@ -81,7 +81,6 @@ function pageselectCallback(page_id, jq) {
 <li><a href="产品介绍-巡更0.html">巡更产品</a></li>
 </ul></li>
 <li><a href="产品介绍-配件0.html">配件</a></li>
-<li><a href="产品介绍-布线0.html">综合布线</a></li>
 <li><a href="产品介绍-线材0.html">线材</a></li>
 <li><a href="产品介绍-软件0.html">管理软件</a></li>
 </ul></dd>
@@ -93,12 +92,9 @@ function pageselectCallback(page_id, jq) {
 <div class="main_content">
 <div><img src="images/product_title.jpg" width="648" height="52" /></div>
 <div class="piclist"><ul>
-<li><a href=""><img src="images/templatemo_product_01.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_02.png" alt="" />产品标题产品标题产品标题产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_03.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_04.png" alt="" />产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_05.png" alt="" />产品标题产品标题产品标题产品标题</a></li>
-<li><a href=""><img src="images/templatemo_product_06.png" alt="" />产品标题</a></li>
+<li><a href="产品介绍页面/工程类/办公网维护方案.html"><img src="产品介绍图片/小图/维保类/办公网维护/1.jpg" alt="" />办公网维护</a></li>
+<li><a href="产品介绍页面/工程类/监控维保方案.html"><img src="产品介绍图片/小图/维保类/监控类维保/1.jpg" alt="" />监控维保</a></li>
+<li><a href="产品介绍页面/工程类/免费WIFI建设方案.html"><img src="产品介绍图片/小图/免费投资/1.jpg" alt="" />免费WIFI建设</a></li>
 </ul></div>
 <div id="Pagination" class="flickr right"></div>
 </div>

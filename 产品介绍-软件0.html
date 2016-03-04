@@ -1,0 +1,119 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>大连云尚网络科技有限公司</title>
+<link rel="stylesheet" type="text/css" href="templatemo_style.css" />
+<link rel="stylesheet" type="text/css" href="styles/pagination.css" />
+<script type="text/javascript" src="scripts/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.pagination.js"></script>
+<script type="text/javascript">
+$(function(){
+	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
+	//分页参数设置
+	var pcount=1;//总记录数
+	var pagesize=0;//页码
+	var page=0;//当前页数
+	$("#Pagination").pagination(pcount, {
+		callback: pageselectCallback,
+		prev_text: "« 上一页",
+		next_text: "下一页 »",
+		items_per_page:pagesize,
+		num_display_entries:3,
+		current_page:page,
+		num_edge_entries:2,
+		//link_to:"技术入门-详细页1.html"
+	});
+});
+function pageselectCallback(page_id, jq) {
+	window.location = "产品介绍-软件" + page_id + ".html"
+}
+</script>
+<style type="text/css">
+<!--
+.STYLE1 {color: #000000}
+-->
+</style>
+</head>
+
+
+<body>
+<div id="templatemo_site_title_bar_wrapper">
+<div id="templatemo_site_title_bar">
+<div id="site_title">
+<h1><a> 
+<img src="images/templatemo_logo.png" alt="www.dlaty.com" /></a></h1>
+</div>
+<div id="templatemo_menu">
+<ul>
+<li><a href="index.html" class="first">主页</a></li>
+<li><a href="产品介绍.html" class="current">产品介绍</a></li>
+<li><a href="解决方案.html">解决方案</a></li>
+<li><a href="技术入门-详细页0.html">技术入门</a></li>
+<li><a href="合作代理.html">合作代理</a></li>
+<li><a href="客户服务.html">客户服务</a></li>
+</ul>
+</div>
+<!-- end of menu --> 
+
+
+</div>
+</div>
+<div id="banner"><img src="images/product.jpg" width="930" height="150" /></div>
+<div id="location">当前位置：<a href="index.html">首页</a > > 产品介绍</div>
+<div id="templatemo_content2">
+<div class="section_218">
+<dl>
+<dt>产品介绍</dt>
+<dd><ul id="nav">
+<li><a href="产品介绍-电话0.html">电话交换机</a></li>
+<li><span class="STYLE1">网络类</span>
+  <ul>
+<li><a href="产品介绍-AC-AP0.html">AC,AP</a></li>
+<li><a href="产品介绍-交换机0.html">交换机</a></li>
+<li><a href="产品介绍-网关0.html">网关产品</a></li>
+<li><a href="产品介绍-光纤0.html">光纤设备</a></li>
+</ul></li>
+<li><span class="STYLE1">监控安全类</span>
+  <ul>
+<li><a href="产品介绍-硬盘录0.html">硬盘录像机</a></li>
+<li><a href="产品介绍-摄像头0.html">摄像头</a></li>
+<li><a href="产品介绍-巡更0.html">巡更产品</a></li>
+</ul></li>
+<li><a href="产品介绍-配件0.html">配件</a></li>
+<li><a href="产品介绍-线材0.html">线材</a></li>
+<li><a href="产品介绍-软件0.html">管理软件</a></li>
+</ul></dd>
+</dl>
+</div>
+
+
+<div class="section_698">
+<div class="main_content">
+<div><img src="images/product_title.jpg" width="648" height="52" /></div>
+<div class="piclist"><ul>
+<li><a href="产品介绍页面/管理软件/ipad点菜.html"><img src="产品介绍图片/小图/管理软件/ipad点菜/1.jpg" alt="" />IPAD点菜系统</a></li>
+<li><a href="产品介绍页面/管理软件/录音系统.html"><img src="产品介绍图片/小图/管理软件/录音系统/1.jpg" alt="" />录音系统</a></li>
+<li><a href="产品介绍页面/管理软件/美萍洗衣房管理系统.html"><img src="产品介绍图片/小图/管理软件/美萍洗衣房管理系统/1.jpg" alt="" />美萍洗衣房管理系统</a></li>
+<li><a href="产品介绍页面/管理软件/通软桌面管理系统.html"><img src="产品介绍图片/小图/管理软件/通软桌面/1.jpg" alt="" />通软桌面管理软件</a></li>
+<li><a href="产品介绍页面/管理软件/远程视频监控系统.html"><img src="产品介绍图片/小图/管理软件/远程视频监控/1.jpg" alt="" />远程视频监控系统</a></li>
+</ul>
+</div>
+<div id="Pagination" class="flickr right"></div>
+</div>
+<div class="main_foot"></div>
+</div>
+<div class="cleaner"></div>
+</div>
+
+
+<div id="templatemo_footer_wrapper">
+<div id="templatemo_footer">
+<center>
+版权所有 <a href="">大连云尚网络科技有限公司</a>
+</center>
+</div>
+<div class="cleaner"></div>
+</div>
+</body>
+</html>
