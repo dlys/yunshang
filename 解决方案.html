@@ -11,9 +11,9 @@
 $(function(){
 	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 	//分页参数设置
-	var pcount=100;//总记录数
-	var pagesize=10;//页码
-	var page=5;//当前页数
+	var pcount=1;//总记录数
+	var pagesize=0;//页码
+	var page=0;//当前页数
 	$("#Pagination").pagination(pcount, {
 		callback: pageselectCallback,
 		prev_text: "« 上一页",
@@ -44,7 +44,7 @@ function pageselectCallback(page_id, jq) {
 <li><a href="index.html" class="first">主页</a></li>
 <li><a href="产品介绍.html">产品介绍</a></li>
 <li><a href="解决方案.html" class="current">解决方案</a></li>
-<li><a href="技术入门-详细页0.html">技术入门</a></li>
+<li><a href="技术入门.html">技术入门</a></li>
 <li><a href="合作代理.html">合作代理</a></li>
 <li><a href="客户服务.html">客户服务</a></li>
 </ul>
@@ -77,15 +77,10 @@ function pageselectCallback(page_id, jq) {
 <div class="section_698">
 <div class="main_content">
 <div><img src="images/fangan_title.jpg" width="648" height="52" /></div>
-<div class="listtxt"><ul>
-<li><a href="#" target="_blank">解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">解决方案解决方案解决方案解决方案解决方案解决方案</a><span>2011-12-12</span></li>
-</ul></div>
-<div id="Pagination" class="flickr right"></div>
+<div class="listtxt">　　我们为大中小企业量身定做的信息化解决方案包括：办公场所布线+无线环境+运营商业务申请+集团电话+小型呼叫中心+企业网站+管理软件。
+  <ul>
+    
+</ul></div><div id="Pagination" class="flickr right"></div>
 </div>
 <div class="main_foot"></div>
 </div>

@@ -20,9 +20,9 @@
 $(function(){
 	$("#nav li").hover(function(){ $(this).find('ul:first').show()},function(){$(this).find('ul:first').hide()});
 	//分页参数设置
-	var pcount=8;//总记录数
+	var pcount;//总记录数
 	var pagesize=0;//页码
-	var page=4;//当前页数
+	var page=0;//当前页数
 	$("#Pagination").pagination(pcount, {
 		callback: pageselectCallback,
 		prev_text: "« 上一页",
@@ -70,7 +70,6 @@ function pageselectCallback(page_id, jq) {
 <dl>
 <dt>技术入门</dt>
 <dd><ul id="nav">
-<li><a href="#">新技术的推广</a></li>
 </ul></dd>
 </dl>
 </div>
@@ -80,12 +79,9 @@ function pageselectCallback(page_id, jq) {
 <div class="main_content">
 <div><img src="images/jishu_title.jpg" width="648" height="52" /></div>
 <div class="listtxt"><ul>
-<li><a href="11.pdf" target="_blank">技术入门技术入门技术入门技术入门</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门技术入门</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">技术入门技术入门技术入门技术入门</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">技术入门技术入门技术入门技术入门</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">技术入门技术入门技术入门技术入门</a><span>2011-12-12</span></li>
-<li><a href="#" target="_blank">技术入门技术入门技术入门技术入门</a><span>2011-12-12</span></li>
+<li><a href="技术入门-详细页0.html" target="_blank">监控摄像头的镜头选择</a><span>2011-12-12</span></li>
+<li><a href="技术入门-详细页1.html" target="_blank">监控免焊BNC接头接法</a><span>2011-12-12</span></li>
+<li><a href="技术入门-详细页2.html" target="_blank">网线线序小常识</a><span>2011-12-12</span></li>
 </ul></div>
 <div id="Pagination" class="flickr right"></div>
 </div>
